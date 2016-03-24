@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Colleen van Lent - {{title}}</title>
+</head>
+<body>
+	<header>
+		<h1>Colleen van Lent</h1>
+		<h2>Home</h2>
+		<nav>
+			<a href = "index.html">Home</a>
+			<a href = "food.html">Food</a>
+			<a href = "family.html">Family</a>
+		</nav>
+	</header>
+	{% block content %}
+	I should never see this content.  It should be replaced.
+	{% endblock %}
+	<footer>
+		<p>Copyright &copy; Colleen van Lent.</p>
+	</footer>
+	
+</body>
+</html>
