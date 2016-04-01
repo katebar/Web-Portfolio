@@ -24,12 +24,22 @@ JINJA_ENVIRONMENT = jinja2.Environment(
     extensions=['jinja2.ext.autoescape'],
     autoescape=True)
 
-class IndexHandler(webapp2.RequestHandler):
+class MainHandler(webapp2.RequestHandler):
     def get(self):
-    	template = JINJA_ENVIRONMENT.get_template('templates/index.html')
-    	self.response.write(template.render({'title': 'HOME'}))
+        try:
+            template = JINJA_ENVIRONMENT.get_template('templates/%s' % self.request.path)
+            self.response.write(template.render())
+        except:
+            template = JINJA_ENVIRONMENT.get_template('templates/index.html')
+            self.response.write(template.render())
+
+
+# class IndexHandler(webapp2.RequestHandler):
+#     def get(self):
+#     	template = JINJA_ENVIRONMENT.get_template('templates/index.html')
+#     	self.response.write(template.render())
 
 app = webapp2.WSGIApplication([
-    ('/', IndexHandler),
-    ('index.html', IndexHandler)
+    ('/', MainHandler),
+    ('/.*', MainHandler)
 ], debug=True)

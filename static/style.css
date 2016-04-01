@@ -1,0 +1,89 @@
+body {
+	background-color:#D0A9F5;
+	margin-top:0%;
+	margin-left:0%;
+	margin-bottom:0%;
+	margin-right:0%;
+	padding-top: 70px;
+	padding-bottom:0px;
+}
+/*img{
+	display:inline-block;
+}
+*/
+nav{
+	font-size:20px;
+}
+
+a{
+	font-size: 15px;
+}
+
+img{
+	width:100px;
+	height:100px;
+}
+
+.icon{
+	width:11%;
+	height:11%;
+	margin-right:5%;
+	margin-left:5%;
+}
+/*
+header {
+	postion:fixed;
+	width:100%;
+	top:0px;
+}*/
+
+header {
+	background-color: #87cefa;
+	background-color: rgba(255,255,255,0.5);
+	margin-right:0%;
+	margin-left:0%;
+	margin-top:0%;
+	margin-bottom:0%;
+	padding-top:1%;
+	padding-left:1%;
+	padding-right:1%;
+	padding-bottom:1%;
+}
+
+footer{
+	background-color: #87cefa;
+	background-color: rgba(255,255,255,0.5);
+	margin-right:0%;
+	margin-left:0%;
+	margin-top:0%;
+	margin-bottom:0%;
+	padding-top:1%;
+/*	padding-left:1%;
+	padding-right:1%;
+	padding-bottom:1%;*/
+	text-align: center;
+
+}
+
+p{
+	padding-top:5%;
+	padding-left:1%;
+	padding-right:1%;
+	padding-bottom:1%;
+}
+
+.jumbotron{
+	background-image:url('forest.jpg');
+	height: 450px;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	margin-top:2%;
+}
+
+.jumbotron h1{
+	color:#000000;
+	text-shadow: 2px 2px #ffffff;
+}
+/*div > nav{
+	background-color:red;
+}*/

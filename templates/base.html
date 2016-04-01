@@ -1,25 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Colleen van Lent - {{title}}</title>
+	
+	<title>Kate Barron Portfolio</title>
+<!-- 	// <script type="text/javascript" src="script.js"></script> -->
+
+<!-- 	<link rel="default.css" href="static/default.css"></link> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"></link>
+<link rel="stylesheet" type="text/css" href="static/style.css"/>
+<meta charset="UTF-8">
+
+<script type="text/javascript">
+	function changecolor(){
+		var url = window.location.pathname;
+		var filename = url.substring(url.lastIndexOf('/')+1);
+		var node = document.getElementById(filename).style.fontSize="150%";
+		// style.fontSize=150%;
+}
+
+</script>
+
+
 </head>
-<body>
-	<header>
-		<h1>Colleen van Lent</h1>
-		<h2>Home</h2>
-		<nav>
-			<a href = "index.html">Home</a>
-			<a href = "food.html">Food</a>
-			<a href = "family.html">Family</a>
+<body onload="changecolor()">
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!--  // <script src="js/bootstrap.min.js"></script> -->
+
+<!-- 	// <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
+
+
+	<header class="navbar-fixed-top">
+	<div class="container">	
+<!-- 	<div class="row"> -->
+
+<div class="row">
+  <div class="col-md-4">
+
+<h1>Kate Barron</h1>
+		<!-- <img class="pull-left img-circle" alt="My Face" src="static/headshot.jpg"> -->
+	</div>	
+
+
+	<div class="col-md-8">
+
+		
+	<!-- <div class="container"> -->
+		<nav class="pull-right">
+			<a href="about.html" id="about.html">About</a>
+			<a href="work.html" id="work.html">Work</a>
+			<a href="resume.html" id="resume.html">Resume</a>
+			<a href="contact.html" id="contact.html">Contact Me</a>
 		</nav>
+	</div>
+	</div>	
+</div>
+</div>
+
+<!-- 	</div> -->
+<!-- </div> -->
+
 	</header>
+
+	<div class="jumbotron">
+		<div class="container">
+			<p></p>
+			<!-- <h1>Kate Barron</h1> -->
+		</div>
+	</div>
 	{% block content %}
 	I should never see this content.  It should be replaced.
 	{% endblock %}
-	<footer>
-		<p>Copyright &copy; Colleen van Lent.</p>
+	
+	<!-- <div class="row"> -->
+	<footer class="navbar-static-bottom">
+		
+		<div class="container">
+		<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<img class="icon" alt="facebook" src="static/facebook.png">
+			<img class="icon" alt="twitter" src="static/twitter.png">
+			<img class="icon" alt="email" src="static/email.png">
+			<img class="icon" alt="linkedin" src="static/linkedin.png">
+		</div>
+	</div>
+</div>
+
+
+
+		<div class="container">
+			<div class="row">
+			<div class="col-md-4 col-md-offset-4">	
+		<p>Copyright &copy; Kate Barron.</p>
+	</div>
+</div>
+</div>
 	</footer>
+<!-- </div> -->
 	
 </body>
 </html>
