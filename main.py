@@ -33,6 +33,26 @@ class MainHandler(webapp2.RequestHandler):
             template = JINJA_ENVIRONMENT.get_template('templates/index.html')
             self.response.write(template.render())
 
+class ContactHandler(webapp2.RequestHandler):
+    def get(self):
+        template = JINJA_ENVIRONMENT.get_template('templates/contact.html')
+        self.response.write(template.render())
+    def post(self):
+        username = self.request.get('username')
+        logging.info(username)
+        password = self.request.get('password')
+        logging.info(password)
+
+        actual_u = "Colleen"
+        actual_p = "pass"
+
+        if username == actual_u and password == actual_p:
+            template = JINJA_ENVIRONMENT.get_template('templates/about.html')
+            self.response.write(template.render())
+        else:
+            template = JINJA_ENVIRONMENT.get_template('templates/work.html')
+            self.response.write(template.render())
+                    
 
 # class IndexHandler(webapp2.RequestHandler):
 #     def get(self):
@@ -41,5 +61,6 @@ class MainHandler(webapp2.RequestHandler):
 
 app = webapp2.WSGIApplication([
     ('/', MainHandler),
-    ('/.*', MainHandler)
+    ('/contact.html',ContactHandler),
+    ('/.*', MainHandler),
 ], debug=True)

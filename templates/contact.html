@@ -2,4 +2,11 @@
 {% block content %} 
 	<p>
 		Contact Me.</p>
+
+			<p>{{hint}}</p>
+	<form method="post" action="/contact.html">
+<p>Enter Username: <input type="text" name="username"/></p>
+<p>Enter Password: <input type="text" name="password"/></p>
+<p><input type="submit" value="login"></p>
+</form>
 {%endblock%}
