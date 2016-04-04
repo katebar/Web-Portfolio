@@ -3,6 +3,8 @@
 <head>
 	
 	<title>Kate Barron Portfolio</title>
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <!-- 	// <script type="text/javascript" src="script.js"></script> -->
 
 <!-- 	<link rel="default.css" href="static/default.css"></link> -->
@@ -19,14 +21,29 @@
 }
 
 </script>
+<!-- 
+// $(document).ready(function(){
+// 	$('img').mouseenter(function(){
+// 		$(this).animate({
+// 			height:'+=10px'
+// 		});
+// 	});
+// 	$('img').mouseleave(function(){
+// 		$(this).animate({
+// 			height: '-=10px'
+// 		});
+// 	});
+// }) -->
+
+
 
 
 </head>
 <body onload="changecolor()">
 	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<!--  // <script src="js/bootstrap.min.js"></script> -->
+	 <script src="js/bootstrap.min.js"></script>
 
-<!-- 	// <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 
 	<header class="navbar-fixed-top">
@@ -46,6 +63,7 @@
 		
 	<!-- <div class="container"> -->
 		<nav class="pull-right">
+			<a href="index.html" id="index.html">Home</a>
 			<a href="about.html" id="about.html">About</a>
 			<a href="work.html" id="work.html">Work</a>
 			<a href="resume.html" id="resume.html">Resume</a>
@@ -61,12 +79,7 @@
 
 	</header>
 
-	<div class="jumbotron">
-		<div class="container">
-			<p></p>
-			<!-- <h1>Kate Barron</h1> -->
-		</div>
-	</div>
+
 	{% block content %}
 	I should never see this content.  It should be replaced.
 	{% endblock %}

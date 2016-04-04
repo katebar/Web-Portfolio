@@ -10,3 +10,9 @@
 // document.getElementsByTagName('a') = document.body.style.color="red"
 
 // })
+
+$(document).ready(function(){
+	$('img').mouseover(function(){
+		$('img').fadeOut('fast')
+	})
+})

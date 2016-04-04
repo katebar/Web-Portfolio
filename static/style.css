@@ -1,5 +1,5 @@
 body {
-	background-color:#D0A9F5;
+	/*background-color:#D0A9F5;*/
 	margin-top:0%;
 	margin-left:0%;
 	margin-bottom:0%;
@@ -20,8 +20,10 @@ a{
 }
 
 img{
-	width:100px;
-	height:100px;
+	width: 100%;
+    height: auto;
+    padding-top:;
+    padding-bottom:;
 }
 
 .icon{
@@ -55,7 +57,7 @@ footer{
 	background-color: rgba(255,255,255,0.5);
 	margin-right:0%;
 	margin-left:0%;
-	margin-top:0%;
+	margin-top:1%;
 	margin-bottom:0%;
 	padding-top:1%;
 /*	padding-left:1%;
@@ -78,12 +80,112 @@ p{
   	background-repeat: no-repeat;
   	background-size: cover;
   	margin-top:2%;
+  	margin-bottom:0%;
 }
 
 .jumbotron h1{
 	color:#000000;
 	text-shadow: 2px 2px #ffffff;
 }
+
+/*div img{
+	position:relative;
+}*/
+
+/*.img-responsive{
+	height:30%;
+	width:30%;
+	display:table-column;
+}
+
+.photos{
+	display:table;
+}*/
+#photo{
+	-webkit-filter:grayscale(100%);
+	position:relative;
+	height:100%;
+	width:100%;
+}
+
+#photo:hover{
+	-webkit-filter:grayscale(0%);
+}
+
+h3{
+	position:absolute;
+	left:10%;
+	top:0px;
+	color:white;
+}
+
+.greeting {
+	text-align:center;
+	margin-top:1%;
+	margin-bottom:1%;
+	font-size:150%;
+	padding-bottom:5%;
+}
+
+.resume{
+	height:90%;
+	width:90%;
+	border-style:solid;
+	border-width:5px;
+	margin-left:5%;
+	margin-right:5%;
+	-webkit-filter:grayscale(100%);
+}
+
+.resume:hover{
+	-webkit-filter:grayscale(0%);
+}
+
+a{
+	color:black;
+}
+
+.resume-text{
+	text-align: center;
+	font-size:225%;
+	margin-top:5%;
+	margin-bottom:5%;
+}
+
+.welcome{
+	font-style:italic;
+	text-align:center;
+	margin-top:5%;
+	margin-bottom:0%;
+	font-size:200%;
+}
+
+.elaboration{
+	text-align:center;
+	margin-left:0%;
+	margin-right:0%;
+	margin-top:0%;
+}
+/*
+#item{
+	height:200px;
+	width:200px;
+}*/
+
+/*h3:hover{
+	display:block;
+
+
+}*/
+
+
+/*div img{
+	display:inline-block;
+	width:100px;
+	height:100px;
+}*/
 /*div > nav{
 	background-color:red;
 }*/
+
+
